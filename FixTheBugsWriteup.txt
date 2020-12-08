@@ -1,0 +1,11 @@
+There are 3 bugs that were fixed in this program and are listed as follows
+
+1) The search method was not implemented
+	The fix for this was just passing the arraylist to the search method. 
+	After this, the method then iterates through all of the expenses and if it is present, it says so and tells the user the index.
+2) The sort method was not implemented
+	The fix for this was again passing the arraylist to the sort method.
+	The expenses are sorted in ascending order using the Collection.sort() method;
+3) Expense values are constantly overwritten
+	The fix for this was simply moving the instatiation of the arraylist and the code that fills it to the main method above the optionSelection method.
+	After this, the optionsSelection method was modified to accept the expense and arrList arraylists and the values are now not overwritten every time the menu is called.
